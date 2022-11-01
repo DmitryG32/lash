@@ -1,0 +1,30 @@
+.hero {
+  background-color: #4e4e4e;
+  background-image: url('../img/hero-bg.png');
+  /* background-image: url('../img/lash.jpg'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+  }
+
+  &__descr {
+    color: var(--color-light);
+  }
+  
+  &__btn {
+    .btn {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

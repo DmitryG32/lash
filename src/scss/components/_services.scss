@@ -1,0 +1,68 @@
+.services {
+  background-color: #4e4e4e;
+  //background-image: url('../img/price-bg.jpg');
+  background-image: url('../img/lash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 600px;
+  padding-top: 70px;
+
+  &__top {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  &__descr {
+    margin: 0;
+    color: var(--color-light);
+  }
+
+  &__price {
+    @include flex-all-sb;
+
+    position: relative;
+    top: 85px;
+    margin: 0 auto;
+    padding: 80px;
+    padding-bottom: 50px;
+    max-width: 1080px;
+    background-color: var(--color-black);
+
+    &-item {
+      width: 50%;
+      padding: 0 15px;
+    }
+  }
+}
+
+.price { 
+
+  &__item{
+    @include flex-all-sb;
+
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-light);
+  }
+
+  &__dots {
+    flex-grow: 1;
+    border-bottom: 1px dashed #999999;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 2.5px;
+    margin-left: 10px;
+    color: var(--color-gold);
+  }
+}
